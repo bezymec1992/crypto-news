@@ -1,0 +1,180 @@
+.main {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.main__article {
+  max-width: 820px;
+  width: 100%;
+}
+.main__title {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  max-width: 1220px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.news__author {
+  margin-left: 20px;
+}
+
+.news__meta {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.news__social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.news__socials {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.main__img {
+  position: relative;
+}
+
+.main__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.main__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.main__text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+.news__tags {
+  font-size: 20px;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 46px;
+}
+
+.post {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  width: 288px;
+  height: 200px;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.post__txt {
+  position: absolute;
+  bottom: 12px;
+  left: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post__btn {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .main__title {
+    font-size: 36px;
+    padding: 0 10px;
+    line-height: 1.2;
+  }
+  .news__meta {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .news__author {
+    margin-left: 0;
+  }
+
+  .main__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .post {
+    width: 100%;
+  }
+
+  .post__txt {
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .news__tags {
+    font-size: 16px;
+    gap: 5px;
+  }
+  .main__title {
+    font-size: 28px;
+  }
+  .sidebar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .post__txt {
+    font-weight: 800;
+    line-height: 1.5;
+  }
+}
