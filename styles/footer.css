@@ -45,18 +45,17 @@
   grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  column-gap: 30px;
+  column-gap: 50px;
 }
 
 .footer__link {
   color: #c7c7c7;
   font-size: 14px;
   transition: all 0.3s;
-  width: fit-content;
 }
 
 .footer__link:hover {
-  color: white;
+  color: var(--color-title);
 }
 
 .footer__social-icons {
