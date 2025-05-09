@@ -23,6 +23,25 @@
   align-items: center;
   gap: 16px;
   padding-top: 24px;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.column__card:hover .column__card-img img {
+  transform: scale(1.05);
+}
+
+.column__card:hover {
+  border-bottom: 1px solid rgba(45, 159, 252, 0.5);
+}
+
+.column__card:hover .column__card-txt {
+  color: #b3d4fc;
+}
+
+.column__card:hover .column__card-title {
+  color: #64aaff;
 }
 
 .column__card-info {
@@ -36,6 +55,7 @@
   margin-bottom: 5px;
   line-height: 1.4;
   font-weight: 800;
+  transition: all 0.3s;
 
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -62,6 +82,8 @@
 .column__card-img {
   width: 176px;
   height: 176px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .column__card-img img {
@@ -69,6 +91,7 @@
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+  transition: all 0.3s;
 }
 
 .advertize__wrapper {
