@@ -55,7 +55,7 @@
 }
 
 .footer__link:hover {
-  color: var(--color-title);
+  color: white;
 }
 
 .footer__social-icons {

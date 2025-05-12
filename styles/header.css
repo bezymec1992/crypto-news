@@ -1,6 +1,7 @@
 header {
   padding: 25px 0 0;
   border-bottom: 1px solid rgba(92, 91, 91, 0.5);
+  margin-bottom: 70px;
 }
 
 .header__container {
@@ -317,6 +318,7 @@ header {
 @media (max-width: 768px) {
   header {
     padding: 16px 0 16px;
+    margin-bottom: 30px;
   }
 
   .header__logo img {
